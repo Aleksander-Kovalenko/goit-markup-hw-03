@@ -29,6 +29,11 @@ body {
   font-size: var(--primary-font-size);
   letter-spacing: var(--primary-letter-spacing);
 }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid purple;
+}
 .button {
   color: var(--button-color);
   background-color: var(--button-bg-color);
@@ -100,6 +105,7 @@ body {
   font-weight: 700;
   line-height: 1.16;
 }
+/* title */
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -143,6 +149,7 @@ body {
   color: #ffffff;
 }
 
+/* title */
 .footer-page .footer-title {
   color: #ffffff;
   font-family: Raleway, sans-serif;
