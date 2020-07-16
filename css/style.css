@@ -29,23 +29,50 @@ body {
   font-size: var(--primary-font-size);
   letter-spacing: var(--primary-letter-spacing);
 }
+img {
+  display: block;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+
   outline: 2px solid purple;
 }
+
+/* primary button */
 .button {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  min-width: 200px;
+  vertical-align: middle;
+
+  border-radius: 4px;
+
   color: var(--button-color);
   background-color: var(--button-bg-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
 }
+.button:focus {
+  outline: none;
+  border: none;
+}
 
 /* LIST OF LIMITS */
 .list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
   text-decoration: none;
   list-style: none;
 }
@@ -53,6 +80,8 @@ body {
 /* HEADER PROPERTY */
 /* logo */
 .title {
+  margin-top: 0px;
+  margin-bottom: 0px;
   color: #000000;
 
   font-family: Raleway, sans-serif;
@@ -89,7 +118,12 @@ body {
 }
 
 /* HERO */
+.hero {
+  text-align: center;
+}
+
 .hero-title {
+  margin-bottom: 280px;
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
 
@@ -101,16 +135,30 @@ body {
 }
 
 /* SECTION */
+.section.no-padding {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 .section {
+  padding-top: 95px;
+  padding-bottom: 95px;
+
   font-weight: 700;
   line-height: 1.16;
 }
 /* title */
 .section-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
+  text-align: center;
 }
 .section-subtitle {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -131,13 +179,36 @@ body {
   text-transform: uppercase;
 }
 
+.work.subtitle {
+  padding-top: 27px;
+  padding-right: 85px;
+  padding-bottom: 27px;
+  padding-left: 85px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  font-size: var(--primary-font-size);
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
 /* TEAM */
 .team {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.14;
 }
+
+.team.name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
 .team.proff {
+  margin-top: 0px;
+  margin-bottom: 16px;
   color: var(--secondary-text-color);
 
   font-weight: 400;
@@ -151,6 +222,9 @@ body {
 
 /* title */
 .footer-page .footer-title {
+  padding-top: 60px;
+  margin-top: 0px;
+  margin-bottom: 20px;
   color: #ffffff;
   font-family: Raleway, sans-serif;
   font-weight: 700;
