@@ -29,6 +29,7 @@ body {
   font-size: var(--primary-font-size);
   letter-spacing: var(--primary-letter-spacing);
 }
+/* Удалю даный селектор после вставки валидных иконок */
 img {
   display: block;
 }
@@ -54,16 +55,15 @@ img {
 
   border-radius: 4px;
 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--button-color);
   background-color: var(--button-bg-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-}
-.button:focus {
+
   outline: none;
   border: none;
 }
@@ -225,6 +225,7 @@ img {
   padding-top: 60px;
   margin-top: 0px;
   margin-bottom: 20px;
+
   color: #ffffff;
   font-family: Raleway, sans-serif;
   font-weight: 700;
