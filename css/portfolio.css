@@ -30,7 +30,7 @@ body {
   letter-spacing: var(--primary-letter-spacing);
 }
 
-/* Удалю этот селектор после вставки валидных иконок */
+/* Удалю этот селектор после вставки правельных иконок */
 img {
   display: block;
 }

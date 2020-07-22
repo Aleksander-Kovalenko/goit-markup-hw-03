@@ -21,6 +21,15 @@
   --primary-letter-spacing: 0.03em;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
@@ -29,9 +38,12 @@ body {
   font-size: var(--primary-font-size);
   letter-spacing: var(--primary-letter-spacing);
 }
-/* Удалю даный селектор после вставки валидных иконок */
-img {
-  display: block;
+/* Убрать после создания иконок */
+.icon {
+  display: inline-block;
+  height: 12px;
+  width: 16px;
+  background-color: blue;
 }
 
 .container {
@@ -39,7 +51,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1230px;
+  width: 1200px;
 
   outline: 2px solid purple;
 }
@@ -95,6 +107,24 @@ img {
 }
 
 /* navigation menu */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+}
+
+.site-nav > .item + .item {
+  margin-left: 50px;
+}
+
+.site-nav li {
+  outline: 1px solid purple;
+}
+
 .header-page .link {
   color: var(--primary-text-color);
 
@@ -113,17 +143,30 @@ img {
 }
 
 /* contact menu */
+.header-page .contact {
+  margin-left: auto;
+  display: flex;
+}
+
+.header-page .btn:not(:last-child) {
+  margin-right: 30px;
+}
+
 .header-page .btn {
+  display: block;
   color: var(--secondary-text-color);
 }
 
 /* HERO */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
+  /* background-color: teal; */
 }
 
 .hero-title {
-  margin-bottom: 280px;
+  margin-bottom: 30px;
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
 
@@ -216,13 +259,13 @@ img {
 
 /* FOOTER PAGE */
 .footer-page {
+  padding-top: 60px;
   background-color: #2f303a;
   color: #ffffff;
 }
 
 /* title */
 .footer-page .footer-title {
-  padding-top: 60px;
   margin-top: 0px;
   margin-bottom: 20px;
 
