@@ -18,19 +18,19 @@
   <body>
     <!-- HEADER -->
     <header class="header-page">
-      <div class="container">
-        <nav>
+      <div class="container flexbox">
+        <nav class="main-nav">
           <a class="list" href="./index.html">
             <h1 class="title">
               <span class="title item">Web</span>
               Studio
             </h1>
           </a>
-          <ul class="list">
-            <li>
+          <ul class="site-nav list">
+            <li class="item">
               <a class="link list" href="./index.html">Студия</a>
             </li>
-            <li>
+            <li class="item">
               <a
                 class="link current list"
                 href="./portfolio.html"
@@ -39,7 +39,7 @@
                 >Портфолио</a
               >
             </li>
-            <li>
+            <li class="item">
               <a
                 class="link list"
                 href=""
@@ -50,45 +50,59 @@
             </li>
           </ul>
         </nav>
-        <a class="btn link list" href="mailto:info@devstudio.com">
-          <img src="./images/post-header.svg" alt="Post" />
-          info@devstudio.com
-        </a>
-        <a class="btn link list" href="tel:+380961111111">
-          <img src="./images/tel-header.svg" alt="Telephone" />
-          +38 096 111 11 11
-        </a>
+        <div class="contact">
+          <a class="btn link list" href="mailto:info@devstudio.com">
+            <span class="icon"></span>
+            info@devstudio.com
+          </a>
+          <a class="btn link list" href="tel:+380961111111">
+            <span class="icon"></span>
+            +38 096 111 11 11
+          </a>
+        </div>
       </div>
     </header>
 
     <!-- UNIQUE-CONTENT -->
     <main>
-      <div class="container">
-        <section class="section">
-          <!-- FILTER MENU -->
-          <div class="filter">
-            <ul class="list">
-              <li><button class="filter-btn">Все</button></li>
-              <li><button class="filter-btn">Веб-сайы</button></li>
-              <li><button class="filter-btn">Приложения</button></li>
-              <li><button class="filter-btn">Дизайн</button></li>
-              <li><button class="filter-btn">Маркетинг</button></li>
-            </ul>
-          </div>
-          <!-- TEAM-WORKS -->
-          <h2 hidden>Широкий спектр разработки</h2>
-          <ul class="list">
-            <li>
+      <!-- FILTER MENU -->
+      <section class="section">
+        <div class="filter container">
+          <ul class="filter-list list content-box">
+            <li class="filter-item">
+              <button class="filter-btn">Все</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-btn">Веб-сайы</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-btn">Приложения</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-btn">Дизайн</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-btn">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- TEAM-WORKS -->
+        <h2 hidden>Широкий спектр разработки</h2>
+        <div class="container">
+          <ul class="work-list flexbox list">
+            <li class="work-item">
               <img src="./images/portfolio/techno.jpg" alt="Технокряк" />
               <h3 class="section-title">Технокряк</h3>
               <p class="section-subtitle">Веб-сайт</p>
               <p class="section-text list">
-                Технокряк это современная площадка распространения коронавируса.
-                Компании используют эту платформу для цифрового шпионажа и атак
-                на защищённые сервера конкурентов.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                animi praesentium. Similique error sint repellendus fuga
+                recusandae. Autem optio possimus aperiam voluptatum velit
+                nesciunt recusandae. Est voluptatum eligendi repellendus dicta.
               </p>
             </li>
-            <li>
+            <li class="work-item">
               <img
                 src="./images/portfolio/neworl.jpg"
                 alt="Постер New Orlean vs Golden Star"
@@ -96,12 +110,13 @@
               <h3 class="section-title">Постер New Orlean vs Golden Star</h3>
               <p class="section-subtitle">Дизайн</p>
               <p class="section-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-                rem autem eveniet quas necessitatibus fugiat obcaecati sed
-                impedit nemo error.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                animi praesentium. Similique error sint repellendus fuga
+                recusandae. Autem optio possimus aperiam voluptatum velit
+                nesciunt recusandae. Est voluptatum eligendi repellendus dicta.
               </p>
             </li>
-            <li>
+            <li class="work-item">
               <img
                 src="./images/portfolio/seafood.jpg"
                 alt="Ресторан Seafood"
@@ -109,32 +124,35 @@
               <h3 class="section-title">Ресторан Seafood</h3>
               <p class="section-subtitle">Приложение</p>
               <p class="section-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Doloremque at commodi error ex modi consequatur nesciunt sit
-                inventore voluptates nemo!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                animi praesentium. Similique error sint repellendus fuga
+                recusandae. Autem optio possimus aperiam voluptatum velit
+                nesciunt recusandae. Est voluptatum eligendi repellendus dicta.
               </p>
             </li>
-            <li>
+            <li class="work-item">
               <img src="./images/portfolio/prime.jpg" alt="Проект Prime" />
               <h3>Проект Prime</h3>
               <p class="section-subtitle">Маркетинг</p>
               <p class="section-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Doloremque at commodi error ex modi consequatur nesciunt sit
-                inventore voluptates nemo!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                animi praesentium. Similique error sint repellendus fuga
+                recusandae. Autem optio possimus aperiam voluptatum velit
+                nesciunt recusandae. Est voluptatum eligendi repellendus dicta.
               </p>
             </li>
-            <li>
+            <li class="work-item">
               <img src="./images/portfolio/boxes.jpg" alt="Проект Boxes" />
               <h3 class="section-title">Проект Boxes</h3>
               <p class="section-subtitle">Приложение</p>
               <p class="section-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Doloremque at commodi error ex modi consequatur nesciunt sit
-                inventore voluptates nemo!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                animi praesentium. Similique error sint repellendus fuga
+                recusandae. Autem optio possimus aperiam voluptatum velit
+                nesciunt recusandae. Est voluptatum eligendi repellendus dicta.
               </p>
             </li>
-            <li>
+            <li class="work-item">
               <img
                 src="./images/portfolio/borders.jpg"
                 alt="Inspiration has no Borders"
@@ -142,12 +160,13 @@
               <h3 class="section-title">Inspiration has no Borders</h3>
               <p class="section-subtitle">Веб-сайт</p>
               <p class="section-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Doloremque at commodi error ex modi consequatur nesciunt sit
-                inventore voluptates nemo!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                animi praesentium. Similique error sint repellendus fuga
+                recusandae. Autem optio possimus aperiam voluptatum velit
+                nesciunt recusandae. Est voluptatum eligendi repellendus dicta.
               </p>
             </li>
-            <li>
+            <li class="work-item">
               <img
                 src="./images/portfolio/book.jpg"
                 alt="Издание Limited Edition"
@@ -155,85 +174,94 @@
               <h3 class="section-title">Издание Limited Edition</h3>
               <p class="section-subtitle">Дизайн</p>
               <p class="section-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Doloremque at commodi error ex modi consequatur nesciunt sit
-                inventore voluptates nemo!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                animi praesentium. Similique error sint repellendus fuga
+                recusandae. Autem optio possimus aperiam voluptatum velit
+                nesciunt recusandae. Est voluptatum eligendi repellendus dicta.
               </p>
             </li>
-            <li>
+            <li class="work-item">
               <img src="./images/portfolio/lab.jpg" alt="Проект LAB" />
               <h3 class="section-title">Проект LAB</h3>
               <p class="section-subtitle">Маркетинг</p>
               <p class="section-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Doloremque at commodi error ex modi consequatur nesciunt sit
-                inventore voluptates nemo!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                animi praesentium. Similique error sint repellendus fuga
+                recusandae. Autem optio possimus aperiam voluptatum velit
+                nesciunt recusandae. Est voluptatum eligendi repellendus dicta.
               </p>
             </li>
-            <li>
+            <li class="work-item">
               <img src="./images/portfolio/pcc.jpg" alt="Growing Business" />
               <h3 class="section-title">Growing Business</h3>
               <p class="section-subtitle">Приложение</p>
               <p class="section-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Doloremque at commodi error ex modi consequatur nesciunt sit
-                inventore voluptates nemo!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                animi praesentium. Similique error sint repellendus fuga
+                recusandae. Autem optio possimus aperiam voluptatum velit
+                nesciunt recusandae. Est voluptatum eligendi repellendus dicta.
               </p>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER LIST -->
     <footer class="footer-page">
-      <div class="container">
-        <a class="list" href="./index.html">
-          <h1 class="footer-title">
-            <span class="title item">Web</span>
-            Studio
-          </h1>
-        </a>
-        <address>
-          <span class="address">г. Киев, пр-т Леси Украинки, 26</span>
-          <br />
-        </address>
-        <address class="list">
-          <a class="address contact" href="mailto:info@devstudio.com">
-            <img src="./images/post-header.svg" alt="Post" />
-            info@devstudio.com <br />
+      <div class="footer container flexbox">
+        <div class="footer-content">
+          <a class="list" href="./index.html">
+            <h1 class="footer-title">
+              <span class="title item">Web</span>
+              Studio
+            </h1>
           </a>
-          <a class="address contact" href="tel:+380961111111">
-            <img src="./images/tel-header.svg" alt="Telephone" />
-            +38 096 111 11 11
-          </a>
-        </address>
-        <div>
+          <address>
+            <span class="address">г. Киев, пр-т Леси Украинки, 26</span>
+            <br />
+          </address>
+          <div class="list">
+            <a class="address contact" href="mailto:info@devstudio.com">
+              <!-- <img src="./images/post-header.svg" alt="Post" /> -->
+              <span class="icon"></span>
+              info@devstudio.com <br />
+            </a>
+            <a class="address contact" href="tel:+380961111111">
+              <!-- <img src="./images/tel-header.svg" alt="Telephone" /> -->
+              <span class="icon"></span>
+              +38 096 111 11 11
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-content">
           <h3 class="footer-subtitle">Присоединяйтесь</h3>
-          <ul class="list">
-            <li>
+          <ul class="content-box social-list list">
+            <li class="social-item">
               <a href=""
                 ><img src="./images/instagarm.svg" alt="instagram"
               /></a>
             </li>
-            <li>
+            <li class="social-item">
               <a href=""><img src="./images/twitter.svg" alt="twitter" /></a>
             </li>
-            <li>
+            <li class="social-item">
               <a href=""><img src="./images/facebook.svg" alt="facebook" /></a>
             </li>
-            <li>
+            <li class="social-item">
               <a href=""><img src="./images/In.svg" alt="In" /></a>
             </li>
           </ul>
         </div>
 
-        <div>
+        <div class="footer-content">
           <h3 class="footer-subtitle">Подпишись на рассылку</h3>
           <input value="E-mail" />
           <button class="button">
             Подписаться
-            <img src="./images/lita.svg" alt="submit" />
+            <span class="icon"></span>
+            <!-- <img src="./images/lita.svg" alt="submit" /> -->
           </button>
         </div>
       </div>

@@ -22,6 +22,8 @@
 }
 
 body {
+  margin: 0px;
+
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
 
@@ -30,9 +32,24 @@ body {
   letter-spacing: var(--primary-letter-spacing);
 }
 
-/* Удалю этот селектор после вставки правельных иконок */
+/* Убрать после создания иконок */
+.icon {
+  display: inline-block;
+  height: 12px;
+  width: 16px;
+  background-color: blue;
+}
+
 img {
   display: block;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content-box {
+  display: flex;
 }
 
 /* Селекторы общего приминения */
@@ -81,6 +98,8 @@ img {
 /* HEADER PROPERTY */
 /* logo */
 .title {
+  margin-top: 0px;
+  margin-bottom: 0px;
   color: #000000;
 
   font-family: Raleway, sans-serif;
@@ -88,12 +107,26 @@ img {
   font-size: 26px;
   line-height: 1.2;
 }
-
 .item {
   color: var(--accent--text-color);
 }
 
 /* navigation menu */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-page {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .header-page .link {
   color: var(--primary-text-color);
 
@@ -101,25 +134,41 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
 .header-page .current {
   color: var(--accent--text-color);
 }
-
 .header-page .link:hover,
 .header-page .link:focus {
   color: var(--accent--text-color);
 }
 
 /* contact menu */
+.header-page .contact {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.header-page .btn:not(:last-child) {
+  margin-right: 30px;
+}
 .header-page .btn {
+  display: block;
   color: var(--secondary-text-color);
 }
 
 /* FILTER MENU */
 .filter {
-  padding-top: 0px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+.filter-list {
+  justify-content: center;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+.filter-item:nth-child(5n) {
+  margin-right: 0;
 }
 .filter-btn {
   padding-top: 6px;
@@ -145,6 +194,27 @@ img {
     0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
+/* TEAM-WORK */
+.work-item {
+  width: calc((100% - 30px * 2) / 3);
+  margin-bottom: 30px;
+}
+.work-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.work-item:nth-child(3n) {
+  margin-right: 0;
+}
+.work-item:nth-child(n + 5) {
+  margin-bottom: 0;
+}
+
+/* Удалю костыль после занятия по декорированию. Сделал для наглядности */
+.work-item .section-text {
+  width: 370px;
+}
+
 /* SECTION */
 .section {
   padding-top: 95px;
@@ -160,7 +230,6 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-
 .section-subtitle {
   margin-top: 0px;
   margin-bottom: 20px;
@@ -185,14 +254,24 @@ img {
   line-height: 1.56;
 }
 
-/* FOOTER PAGE */
+/* FOOTER */
 .footer-page {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
   color: #ffffff;
 }
-
+.footer {
+  justify-content: space-between;
+}
+.footer-content {
+  width: calc((100 - 30px * 2) / 3);
+}
+/* .footer-content:not(:last-child) {
+  margin-right: 30px;
+} */
+/* title */
 .footer-page .footer-title {
-  padding-top: 60px;
   margin-top: 0px;
   margin-bottom: 20px;
 
@@ -201,6 +280,14 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+}
+
+.footer-subtitle {
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+  font-style: normal;
+  text-transform: uppercase;
 }
 
 /* address */
@@ -213,9 +300,6 @@ img {
 }
 
 .address.contact {
+  margin-top: 10px;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-subtitle {
-  text-transform: uppercase;
 }
