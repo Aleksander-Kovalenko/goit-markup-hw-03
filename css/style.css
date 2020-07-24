@@ -250,7 +250,7 @@ img {
   margin-right: 30px;
 }
 .work-item:nth-child(3n) {
-  margin-left: 0px;
+  margin-right: 0px;
 }
 
 /* TEAM */
