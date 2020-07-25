@@ -171,10 +171,6 @@ img {
 }
 
 /* SECTION */
-.section.no-padding {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
 .section {
   padding-top: 95px;
   padding-bottom: 95px;
@@ -207,6 +203,9 @@ img {
 }
 
 /* ADVANTAGES */
+.advantages {
+  padding-bottom: 0;
+}
 .advantages-item {
   width: calc((100% - 30px * 3) / 4);
 }
