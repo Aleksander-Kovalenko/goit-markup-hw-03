@@ -38,6 +38,8 @@ body {
   height: 12px;
   width: 16px;
   background-color: blue;
+
+  vertical-align: middle;
 }
 
 img {

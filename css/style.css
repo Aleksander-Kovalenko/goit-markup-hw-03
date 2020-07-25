@@ -300,6 +300,8 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   background-color: aqua;
+
+  vertical-align: middle;
 }
 .customers-item {
   width: calk((100% - 30px * 5) / 6);
