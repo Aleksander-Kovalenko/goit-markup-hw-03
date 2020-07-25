@@ -260,6 +260,7 @@ img {
 
   font-weight: 400;
 }
+
 .team-item {
   width: calc((100% - 30px * 3) / 4);
 }
