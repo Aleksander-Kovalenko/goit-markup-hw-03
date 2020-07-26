@@ -115,14 +115,14 @@ img {
   display: flex;
   margin-left: 85px;
 }
+
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
-.header-page {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
+
 .header-page .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
 
   font-weight: 500;
