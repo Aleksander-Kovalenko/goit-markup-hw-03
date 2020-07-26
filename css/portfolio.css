@@ -125,11 +125,10 @@ img {
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
-.header-page {
+.header-page .link {
+  display: block;
   padding-top: 30px;
   padding-bottom: 30px;
-}
-.header-page .link {
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -137,8 +136,12 @@ img {
   letter-spacing: 0.02em;
 }
 .header-page .current {
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom: 2px solid var(--accent--text-color);
   color: var(--accent--text-color);
 }
+.header-page .link:hover,
 .header-page .link:hover,
 .header-page .link:focus {
   color: var(--accent--text-color);
