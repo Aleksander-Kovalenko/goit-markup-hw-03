@@ -38,7 +38,7 @@ body {
   background-color: blue;
 }
 img {
-  display: block;
+  display: flex;
 }
 
 .container {
@@ -46,8 +46,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
-  /* background-color: rgb(145, 222, 135); */
+  width: 1170px;
 }
 
 /* primary button */
@@ -249,20 +248,24 @@ img {
   text-align: center;
   background-color: #f5f4fa;
 }
+
 .team.name {
   margin-top: 30px;
   margin-bottom: 10px;
+  background-color: inherit;
 }
 .team.proff {
   margin-top: 0px;
   margin-bottom: 16px;
   color: var(--secondary-text-color);
+  background-color: inherit;
 
   font-weight: 400;
 }
 
 .team-item {
   width: calc((100% - 30px * 3) / 4);
+  background-color: #ffffff;
 }
 .team-item:nth-child(4n) {
   margin-right: 0;
